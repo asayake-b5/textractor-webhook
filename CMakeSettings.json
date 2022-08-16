@@ -1,0 +1,136 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "ctestCommandArgs": "",
+      "cmakeToolchain": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "variables": [
+        {
+          "name": "CMAKE_GENERATOR_PLATFORM",
+          "value": "",
+          "type": "STRING"
+        },
+        {
+          "name": "SSL_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x64-windows-static/debug/lib/libssl.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "LIB_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x64-windows-static/debug/lib/libcrypto.lib",
+          "type": "FILEPATH"
+        }
+      ]
+    },
+    {
+      "name": "x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "cmakeToolchain": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "LIB_EAY_RELEASE",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/lib/libcrypto.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "LIB_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/debug/lib/libcrypto.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "OPENSSL_APPLINK_SOURCE",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/include/openssl/applink.c",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "SSL_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/debug/lib/libssl.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "SSL_EAY_RELEASE",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/lib/libssl.lib",
+          "type": "FILEPATH"
+        }
+      ]
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "ctestCommandArgs": "",
+      "cmakeToolchain": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "variables": [
+        {
+          "name": "CMAKE_GENERATOR_PLATFORM",
+          "value": "",
+          "type": "STRING"
+        },
+        {
+          "name": "SSL_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x64-windows-static/debug/lib/libssl.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "LIB_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x64-windows-static/debug/lib/libcrypto.lib",
+          "type": "FILEPATH"
+        }
+      ]
+    },
+    {
+      "name": "x86-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "cmakeToolchain": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "LIB_EAY_RELEASE",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/lib/libcrypto.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "LIB_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/debug/lib/libcrypto.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "OPENSSL_APPLINK_SOURCE",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/include/openssl/applink.c",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "SSL_EAY_DEBUG",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/debug/lib/libssl.lib",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "SSL_EAY_RELEASE",
+          "value": "C:/dev/vcpkg/installed/x86-windows-static/lib/libssl.lib",
+          "type": "FILEPATH"
+        }
+      ]
+    }
+  ]
+}
