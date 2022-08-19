@@ -1,0 +1,21 @@
+* Server for Textractor-Webhook
+** How To Use
+1. Download the release here
+2. Run it
+   - You can use the argument -b (or --bind) to change the binding address, useful if you
+   - By default, will bind to 127.0.0.1:8000 (or the first port available after that)
+3. Modify the webhook_url.txt file appropriately
+   e.g. (change the url of course)
+   #+begin_example
+192.168.1.25:8000
+/api/push
+   #+end_example
+4. Head to that url, as textractor processes more lines it'll be updated automagically!
+
+** Compiling
+#+begin_example
+git clone placeholder
+cd placeholder/server
+cargo build --release
+#+end_example
+And then the file is in target/release/server
