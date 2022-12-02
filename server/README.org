@@ -1,9 +1,13 @@
 * Server for Textractor-Webhook
 ** How To Use
-1. Download the release here
+1. Download the release [[https://github.com/sdbversini/textractor-webhook/releases/tag/1.0.0][here]]
 2. Run it
-   - You can use the argument -b (or --bind) to change the binding address, useful if you
-   - By default, will bind to 127.0.0.1:8000 (or the first port available after that)
+   - You can use the argument -b (or --bind) to change the binding address, useful if you want to let other computers connect to it (this is probably what you want). To let everyone connect you can use
+     #+begin_src bash
+-b 0.0.0.0:8000
+     #+end_src
+     of course, you'll need to handle port forwarding and whatnot, or use a vpn like openvpn/wireguard/zerotier...
+   - By default, will bind to 127.0.0.1:8000 (or the first port available after that), so only the local machine will be able to
 3. Modify the webhook_url.txt file appropriately
    e.g. (change the url of course)
    #+begin_example
@@ -18,4 +22,4 @@ git clone placeholder
 cd placeholder/server
 cargo build --release
 #+end_example
-And then the file is in target/release/server
+And then the file is in target/release/server, you'll need the static folder as well in the same directory as the executable.

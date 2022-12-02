@@ -1,8 +1,6 @@
 #+TITLE: Textractor-Webhook
 This is a [[https://github.com/Artikash/Textractor][Textractor]] extension which simply pushes your text to a webhook (for instance, to a Discord channel).
-
-(WIP but soon) An external server is provided too, which pipes the input to a webpage directly, easier if you want to look stuff up using a pop-up dictionary.
-
+Alternatively, you can use our provided server (see [[https://github.com/sdbversini/textractor-webhook/releases/tag/1.0.0][here]]), to pipe the output to firefox.
 ** How To Use
 1. [[https://github.com/sdbversini/textractor-webhook/releases/download/1.0.0/extension.zip][Get the Release here]], extract in the textractor folder, merge, the .dll and .txt have to go in the same folder as the other dlls (and have to match the architecture, so x86 goes with x86 and x64 with x64).
 2. Edit the two "webhook​_url.txt" files, put the url of your webhook matching the way it is in the provided file.
