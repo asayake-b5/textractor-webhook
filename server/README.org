@@ -6,8 +6,8 @@
      #+begin_src bash
 -b 0.0.0.0:8000
      #+end_src
-     of course, you'll need to handle port forwarding and whatnot, or use a vpn like openvpn/wireguard/zerotier...
-   - By default, will bind to 127.0.0.1:8000 (or the first port available after that), so only the local machine will be able to
+     of course, you can bind to a specific ip (eg, 192.168.1.0:8000, etc), and you'll need to handle port forwarding and whatnot, or use a vpn like openvpn/wireguard/zerotier...
+   - By default, will bind to 127.0.0.1:8000 (or the first port available after that), so only the local machine will be able to transmit the contents (not very useful unless you really don't want to use a clipboard extension)
 3. Modify the webhook_url.txt file appropriately
    e.g. (change the url of course)
    #+begin_example
