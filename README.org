@@ -5,7 +5,7 @@ Alternatively, you can use our provided server (see [[https://github.com/sdbvers
 1. [[https://github.com/sdbversini/textractor-webhook/releases/download/1.0.0/extension.zip][Get the Release here]], extract in the textractor folder, merge, the .dll and .txt have to go in the same folder as the other dlls (and have to match the architecture, so x86 goes with x86 and x64 with x64).
 2. Edit the two "webhook​_url.txt" files, put the url of your webhook matching the way it is in the provided file.
 
-   **IMPORTANT** The URL must **absolutely** spread on two lines, with the first one ending with the domain name (like ".com"), without the slash, and the second line must be the rest of the url.
+   *IMPORTANT* The URL must *absolutely* spread on two lines, with the first one ending with the domain name (like ".com"), without the slash, and the second line must be the rest of the url.
 
    Really, as long as it looks like the provided file, or like below, it should be fine.
    #+begin_example
