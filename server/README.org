@@ -23,3 +23,16 @@ cd placeholder/server
 cargo build --release
 #+end_example
 And then the file is in target/release/server, you'll need the static folder as well in the same directory as the executable.
+
+** Optional but recommended: Using the anacreon clipboard html instead of the default
+
+If you're used to clipboard monitoring (or are curious), you probably like [[https://anacreondjt.gitlab.io/docs/texthooker/][Anacreon's texthook page]], because put bluntly, it is miles ahead of the one I provided.
+
+You can, thankfully, use that one instead, pretty simply:
+1. Download the file, as index.html, in the static folder after extraction, overwrite the file that was here before
+2. Edit the index.html file, adding the following
+   #+begin_src html
+<script src="static/js/js.js" defer></script>
+   #+end_src
+before the `</body>` tag (you can unminify the html if needed etc)
+3. Done!
