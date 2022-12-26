@@ -34,32 +34,7 @@ async fn push_line(
 }
 
 async fn homepage(_: HttpRequest) -> impl Responder {
-    let js = include_str!("../static/js/js.js");
-    let body = format!(
-        r#"
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Textractor Contents</title>
-    <style>
-html {{
-background-color: #202020;
-color: #bdbdbd;
-font-size: 1.75em;
-line-height: 200%;
-margin: 5%;
-}}
-</style>
-</head>
-<script defer> {js}</script>
-<body>
-<ul id="list">
-</ul>
-</body>
-</html>
-"#,
-    );
+    let body = std::fs::read_to_string("static/index.html").unwrap();
     HttpResponse::Ok()
         .content_type(ContentType::html())
         .body(body)
