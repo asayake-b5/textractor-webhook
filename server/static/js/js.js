@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function myOnMessage(message) {
-  let li = document.createElement("li");
-  li.innerText = message.data;
-  document.getElementById("list").append(li);
+  let p = document.createElement("p");
+  p.innerText = message.data;
+  document.body.append(p);
 
 }
