@@ -18,8 +18,8 @@
 
 ** Compiling
 #+begin_example
-git clone placeholder
-cd placeholder/server
+git clone https://github.com/sdbversini/textractor-webhook
+cd textractor-webhook/server
 cargo build --release
 #+end_example
 And then the file is in target/release/server, you'll need the static folder as well in the same directory as the executable.
